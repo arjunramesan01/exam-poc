@@ -1,0 +1,451 @@
+.examsHeader {
+    margin-top: 3rem;
+    font-size: 18px;
+    color: #773984;
+    font-weight: bold;
+  }
+  
+  .paperHeader {
+    margin-top: 5rem;
+    color: #773984;
+    font-size: 16px;
+    font-weight: 400;
+  }
+  
+  .paperHeader b {
+    font-weight: 600;
+  }
+  
+  .assessmentContainer {
+    border-bottom: rgba(119, 57, 132, 0.5) solid 0.5px;
+    font-weight: 400;
+    font-size: 15px;
+    color: #773984;
+    padding: 20px 0;
+  }
+  
+  .gi_title {
+    font-size: 20px;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+    color: black;
+    font-weight: 400;
+    font-family: "GothamSSm";
+  }
+  
+  .markingAssist {
+    float: right;
+    font-weight: 300;
+    cursor: pointer;
+  }
+  
+  .optionsHolder {
+    display: grid;
+    grid-template-columns: 25px auto;
+    margin-top: 1rem;
+  }
+  
+  .filterBox {
+    /* float: right; */
+    display: grid;
+    grid-template-columns: 140px 140px 140px;
+    column-gap: 10px;
+  }
+  
+  .filterTab {
+    width: 100%;
+  }
+  
+  .filterTab select {
+    width: 100%;
+    border: 0.5px solid #773984;
+    border-radius: 5px;
+    color: #773984;
+    padding: 10px;
+    margin-top: 20px;
+  
+    /* background: url("data:image/svg+xml,<svg height='10px' width='10px' viewBox='0 0 16 16' fill='%23000000' xmlns='http://www.w3.org/2000/svg'><path d='M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z'/></svg>")
+      no-repeat;
+    background-position: calc(100% - 0.75rem) center !important;
+    -moz-appearance: none !important;
+    -webkit-appearance: none !important;
+    appearance: none !important;
+    padding-right: 1rem !important; */
+  
+    /* Arrow CSS code */
+    background: url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/br_down.png)
+      no-repeat right !important;
+    appearance: none !important;
+    background-size: 8px 8px !important;
+    background-position: 93% 50% !important;
+  }
+  
+  .optionCircle {
+    background-color: grey;
+    border-radius: 50%;
+    display: flex;
+    height: 20px;
+    width: 20px;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    color: white;
+    padding: 0.5rem;
+  }
+  
+  .viewSolution {
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .viewSolution div {
+    height: 8px;
+    width: 8px;
+  }
+  
+  .viewSolution span {
+    margin-right: 6px;
+  }
+  
+  .solutionBox {
+    background-color: #e5f1d7;
+    padding: 33px 40px;
+    margin: 30px 0;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 300;
+    overflow-x: auto;
+    line-height: 22px;
+    /* or 157% */
+  
+    letter-spacing: -0.3px;
+  }
+  
+  .markingAssistContainer {
+    padding: 20px 40px;
+    overflow-y: auto;
+    max-height: 85vh;
+  }
+  
+  .chartDiv {
+    background: white;
+    padding: 20px 20px;
+    border-radius: 8px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px rgba(84, 84, 84, 0.1);
+  }
+  
+  .chartToggleContainer {
+    display: grid;
+    grid-template-columns: 80px 80px;
+    cursor: pointer;
+    font-size: 10px;
+    font-weight: 400;
+    color: #773984;
+  }
+  
+  .ctaBanner {
+    height: 170px;
+    width: 100%;
+    position: relative;
+  }
+  
+  .ctaBanner img {
+    border-radius: 10px;
+  }
+  
+  .ctaButton {
+    background: linear-gradient(180deg, #ffce3a 0%, #fea100 100%);
+    border-radius: 100px;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 15px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  
+  .ctaArea {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+  
+  .toggleTagsLeft {
+    border: solid #773984 0.25px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 8px 10px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  
+  .summaryTextDiv {
+    text-align: center;
+    padding-top: 20px;
+    line-height: 20px;
+  }
+  
+  .summaryTextDiv b {
+    color: #773984;
+  }
+  
+  .chartTitle {
+    color: black;
+    font-weight: 400;
+    font-size: 18px;
+  }
+  
+  .toggleTagsRight {
+    border: solid #773984 0.25px;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 8px 10px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    border-left: none;
+  }
+  
+  .chartTop {
+    display: grid;
+    grid-template-columns: 1fr 160px;
+  }
+  
+  .markingAsssistDiv {
+    display: grid;
+    grid-template-columns: 1fr 60px;
+    column-gap: 2rem;
+    border-bottom: solid 1px grey;
+    padding: 1.5rem 0;
+    max-width: 60vw;
+  }
+  
+  .markingAsssistDiv p {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .markingAsssistDiv img,
+  .solutionBox img,
+  .questionsHolder img {
+    max-width: 100%;
+    padding: 10px;
+  }
+  
+  .solutionTitle {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .questionBottomSection {
+    background: rgba(119, 57, 132, 0.12);
+    padding: 15px 40px;
+    display: grid;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    grid-template-columns: 1fr 1fr;
+    font-size: 12px;
+    color: #773984;
+  }
+  
+  .sectionDiv {
+    color: black;
+  }
+  
+  .questionsHolder {
+    background: #ffffff;
+    box-shadow: 0px 0px 10px rgba(84, 84, 84, 0.1);
+    border-radius: 8px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 20px 40px;
+    font-size: 14px;
+    font-weight: 300;
+    overflow-x: auto;
+    margin-top: 16px;
+    line-height: 22px;
+    /* or 157% */
+  
+    letter-spacing: -0.3px;
+  }
+  
+  .sectionTitle {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 40px 0 25px 0;
+  }
+  
+  .questionDiv p:first-child {
+    display: inline;
+  }
+  
+  .comprehensiveQuestionsContainer {
+    margin: 1.5rem 0 0 0;
+  }
+  .subQuestionDiv {
+    margin: 0.5rem 0 0 0;
+  }
+  
+  .subQuestionDiv p:first-child {
+    display: inline;
+  }
+  
+  .sectionInstructions {
+    font-weight: 300;
+    font-size: 14px;
+    margin-top: 10px;
+  }
+  
+  .instructionsDiv {
+    font-size: 14px;
+    color: black;
+    font-weight: 300;
+    display: inline;
+    font-family: "GothamSSm";
+    line-height: 21px;
+  }
+  
+  .linkContainer:hover{
+    text-decoration: none;
+    cursor:auto
+  }
+  
+  .ac_title {
+    font-weight: bold;
+    margin-bottom: 0.8rem;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  
+  .ac_subTitle {
+    font-weight: 300;
+    font-size: 14px;
+  }
+  
+  .searchBarDiv {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+    /* margin: 2rem 0 0.5rem 0; */
+  }
+  
+  .searchBarDiv > div {
+    margin: 2.2rem 4px 0rem -0.2rem;
+    position: absolute;
+    right: 0;
+  }
+  
+  .searchBarIcon {
+    height: 44px;
+    width: 44px;
+  }
+  
+  .searchBar {
+    border: none;
+    border-radius: 24px;
+    height: 48px;
+    width: 100%;
+    padding: 1.2rem 3rem 1.2rem 30px;
+    margin: 2rem 0 0.5rem 0;
+    font-size: 1rem;
+    outline: 0;
+    align-self: center;
+    box-shadow: 0px 4px 16px rgba(84, 84, 84, 0.12);
+    display: block;
+  }
+  
+  .breadCrumbs {
+    font-size: 12px;
+    margin: 1rem 0 1.5rem 0;
+    display: flex;
+    font-weight: 300;
+    color: #773984;
+  }
+  
+  .breadCrumbs > span {
+    padding-right: 0.5rem;
+  }
+  
+  .breadCrumbs > span:last-child {
+    color: black;
+    font-weight: 400;
+  }
+  
+  .examPaperContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .examsQuestionContainer {
+    background: #ffffff;
+    /* Light Shadow */
+    box-shadow: 0px 0px 10px rgba(84, 84, 84, 0.1);
+    border-radius: 8px;
+    margin: 2rem 0rem;
+    padding: 2rem 0rem 0rem 0rem;
+    align-content: center;
+  }
+  
+  .backgroundColorExamPaper {
+    background: linear-gradient(
+      180deg,
+      rgba(243, 186, 255, 0.3) 30%,
+      rgba(255, 255, 255, 0) 70%
+    );
+    /* position: absolute; */
+    width: 100%;
+    z-index: -1;
+    height: 100vh;
+  }
+  
+  .filterContainer {
+    margin-top: 10px;
+  }
+  .sectionTitle {
+    font-weight: 400;
+    font-size: 16px;
+    margin: 40px 0 10px 0;
+  }
+  
+  @media only screen and (max-width: 767.98px) {
+    .chartTop {
+      grid-template-columns: 1fr;
+      row-gap: 1rem;
+    }
+  
+    .filterBox {
+      float: none;
+      display: block;
+    }
+  
+    .filterTab {
+      width: 150px;
+      display: inline-block;
+      margin-right: 10px;
+      height: 0;
+    }
+  
+    .chartDiv {
+      padding: 40px 10px;
+      align-self: center;
+    }
+  
+    .ctaArea {
+      grid-template-columns: 1fr;
+      row-gap: 1rem;
+    }
+  
+    .gi_title {
+      font-size: 16px;
+    }
+  }
+  
