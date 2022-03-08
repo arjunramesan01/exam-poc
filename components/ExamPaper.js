@@ -11,7 +11,7 @@ const ExamPaper = (props) => {
     props = props.assessmentData;
 
     const absolutePath = '';
-    const assetURL = 'https://search-static.byjusweb.com/assets';
+    const assetURL = '';
     var [questionsList, setQuestionsList] = useState(props.assessmentData["paperSections"]);
     var [filterSelected, setFilterSelected] = useState(null);
     var [viewSolutionId, setViewSolutionId] = useState(null);
