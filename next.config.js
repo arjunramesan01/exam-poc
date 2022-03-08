@@ -41,7 +41,7 @@ module.exports = {
   },
   reactStrictMode: true,
   trailingSlash: true,
-  assetPrefix: '',
+  assetPrefix: 'https://exam-poc.byjusweb.com',
   images: {
     domains: ['s3-us-west-2.amazonaws.com', 'infinitestudent-migration-images.s3-us-west-2.amazonaws.com', '*.s3-us-west-2.amazonaws.com', 'cdn1.byjus.com', 'search-app.byjusweb.com', 'search-static-stg.byjusweb.com', 'search-static.byjusweb.com'],
   },
